@@ -1,4 +1,4 @@
-import userdata from '../../utils/userdata.json';
+import userdata from "../testdata/userdata.json";
 class LoginPage {
     constructor(page) {
         this.page = page;
