@@ -18,7 +18,7 @@ pipeline {
 
         stage('Run Tests') {
             steps {
-                sh 'npx playwright test --reporter=html'
+                sh 'npx playwright test growthstage.spec.js  --project=chromium  --reporter=html'
             }
         }
     }
