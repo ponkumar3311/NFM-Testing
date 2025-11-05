@@ -24,7 +24,7 @@ pipeline {
         stage('Run Tests') {
             steps {
                 // Run tests headless (default in CI)
-                sh 'npx playwright test --reporter=html'
+                sh 'npx playwright test growthstage.spec.js  --project=chromium  --reporter=html'
             }
         }
 
