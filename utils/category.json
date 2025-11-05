@@ -1,0 +1,35 @@
+{
+    "create" : {
+
+        "addButtonLabel": "+ ADD CATEGORY",
+        "language": "English",
+        "saveButtonLabel": "Save Category",
+        "Name" : "Jack"
+    },
+
+    "editEnglish": {
+        "language": "English",
+        "updateButtonLabel": "UPDATE",
+        "Name": "Jack Fruit",
+         "addButtonLabel": "+ ADD CATEGORY",
+        "saveButtonLabel": "Save Category",
+        "duplicateMsg": "Category name must be unique per language",
+    "duplicateMsgButton": "Ok"
+    },
+    
+    "editHindi": {
+        "language": "Hindi",
+        "updateButtonLabel": "अद्यतन करें",
+        "Name": "Updated Hindi Jack Fruit",
+        "duplicateMsg": "Category name must be unique per language",
+    "duplicateMsgButton": "Ok"
+    },
+     "editTamil": {
+        "language": "Tamil",
+        "updateButtonLabel": "புதுப்பிக்கவும்",
+        "Name": "Updated Tamil Jack Fruit",
+        "duplicateMsg": "Category name must be unique per language",
+    "duplicateMsgButton": "Ok"
+  }
+
+}
