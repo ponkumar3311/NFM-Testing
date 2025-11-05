@@ -5,7 +5,7 @@ pipeline {
 
         stage('Clone Repo') {
             steps {
-                git branch: 'main', url: 'https://github.com/I4u-Labs/nurseryautomation.git'
+                git branch: 'main', url: 'https://github.com/ponkumar3311/NFM-Testing.git'
             }
         }
 
