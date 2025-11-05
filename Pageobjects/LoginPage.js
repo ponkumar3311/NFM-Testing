@@ -1,4 +1,3 @@
-import userdata from "../testdata/userdata.json";
 class LoginPage {
     constructor(page) {
         this.page = page;
@@ -7,7 +6,7 @@ class LoginPage {
         this.loginButton = page.locator("//*[@id='root']/div/div/div[2]/form/div[4]/button");
     }
     async goto() {
-        await this.page.goto(userdata.loginUrl);
+        await this.page.goto("https://nfm-fe.i4ulabs.com/login");
     }
 
     async login(username, password) {
