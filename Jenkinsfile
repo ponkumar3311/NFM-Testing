@@ -3,12 +3,6 @@ pipeline {
 
     stages {
 
-        stage('Clone Repo') {
-            steps {
-                git branch: 'main', url: 'https://github.com/ponkumar3311/NFM-Testing.git'
-            }
-        }
-
         stage('Install Dependencies') {
             steps {
                 sh 'npm install'
@@ -17,32 +11,20 @@ pipeline {
 
         stage('Install Playwright Browsers') {
             steps {
-                sh 'npx playwright install --with-deps'
+                // No sudo needed if already installed manually
+                sh 'npx playwright install'
             }
         }
 
         stage('Run Tests') {
             steps {
-                // Run tests headless (default in CI)
-                sh 'npx playwright test growthstage.spec.js  --project=chromium  --reporter=html'
-            }
-        }
-
-        stage('Archive Test Report') {
-            steps {
-                // Ensure report directory exists
-                script {
-                    if (!fileExists('playwright-report')) {
-                        error("Playwright report directory not found. Test execution may have failed.")
-                    }
-                }
+                sh 'npx playwright test --reporter=html'
             }
         }
     }
 
     post {
         always {
-            // Publish Playwright HTML Report in Jenkins UI
             publishHTML(target: [
                 reportDir: 'playwright-report',
                 reportFiles: 'index.html',
