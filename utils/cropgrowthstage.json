@@ -1,0 +1,35 @@
+{
+  "create": {
+    "addButtonLabel": "+ ADD STAGE",
+    "saveButtonLabel": "Save STAGE",
+    "language": "English",
+    "Name": "Test Stage 1",
+    "description": "This is a test stage"
+  },
+  "editEnglish": {
+    "addButtonLabel": "+ ADD STAGE",
+    "saveButtonLabel": "Save STAGE",
+    "language": "English",
+    "updateButtonLabel": "UPDATE",
+    "Name": "Test Stage Updated",
+    "description": "This is a test stage updated Description",
+    "duplicateMsg": "Name already exists",
+    "duplicateMsgButton": "Ok"
+  },
+  "editHindi": {
+    "language": "Hindi",
+    "updateButtonLabel": "अद्यतन करें",
+    "Name": "Test Stage Updated Hindi",
+    "description": "This is a test stage updated Description Hindi",
+    "duplicateMsg": "Growthstage name must be unique per language",
+    "duplicateMsgButton": "Ok"
+  },
+  "editTamil": {
+    "language": "Tamil",
+    "updateButtonLabel": "புதுப்பிக்கவும்",
+    "Name": "Test Stage Updated Tamil",
+    "description": "This is a test stage updated Description Tamil",
+    "duplicateMsg": "Growthstage name must be unique per language",
+    "duplicateMsgButton": "Ok"
+  }
+}

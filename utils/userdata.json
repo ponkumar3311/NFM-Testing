@@ -1,0 +1,6 @@
+{
+"username": "user@gmail.com", 
+"password": "admin123",
+"loginUrl": "https://nfm-fe.i4ulabs.com/login",
+"ExpectedUrl": "https://nfm-fe.i4ulabs.com/app/dashboard"
+}
