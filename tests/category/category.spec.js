@@ -21,9 +21,9 @@ test.describe('Category Tests', () => {
 
     await categoryPage.create(create);
     await categoryPage.testCase1(create);
-    //await categoryPage.view(create);
+    
     await categoryPage.edit(create.Name,editEnglish);
-    //await categoryPage.view(editEnglish);
+    
     await categoryPage.updateInLanguage(editEnglish.Name,editHindi);
     await categoryPage.updateInLanguage(editEnglish.Name,editTamil);
     await categoryPage.findduplicatemessage(editEnglish,editHindi,editTamil);
